@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="English Supporter"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.AlarmActivity"></activity>
+        <activity android:name=".Activity.DailyWordActivity" />
+        <activity android:name=".Activity.ListWordActivity" />
+        <activity android:name=".Activity.HomeWorkActivity" />
+        <activity android:name=".Activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.LessonActivity" />
+        <activity android:name=".Activity.MainActivity" />
+        <receiver android:name=".receiver.AlarmReceiver"></receiver>
+    </application>
+</manifest>
